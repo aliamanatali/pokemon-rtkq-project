@@ -1,70 +1,85 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Redux ToolKit Query Project - Pokemon Explorer
 
-## Available Scripts
+Pokemon Explorer is a React application that allows users to browse a list of Pokémon and view detailed information about each Pokémon on a separate page. This project utilizes Redux Toolkit for state management and RTK Query for fetching data from the Pokémon API.
 
-In the project directory, you can run:
+## Features
 
-### `yarn start`
+- **Browse Pokémon**: View a paginated list of Pokémon.
+- **View Details**: Click on a Pokémon to see detailed information on a new route.
+- **State Management**: Uses Redux Toolkit for efficient state management.
+- **Data Fetching**: Utilizes RTK Query for seamless API data fetching.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React**: A JavaScript library for building user interfaces.
+- **Redux Toolkit**: A predictable state container for JavaScript apps.
+- **RTK Query**: A powerful data fetching and caching tool.
+- **React Router**: A collection of navigational components for React applications.
+- **Pokémon API**: The external API used to fetch Pokémon data.
 
-### `yarn test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `yarn build`
+- Node.js (version 14 or higher recommended)
+- npm or yarn
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/aliamanatali/pokemon-explorer.git
+   cd pokemon-explorer
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-### `yarn eject`
+### Running the Application
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Start the development server:
+```bash
+npm start
+# or
+yarn start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The application will be available at `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- `src/`: Main source directory
+  - `app/`: Contains the Redux store setup
+  - `features/pokemon/`: Contains Pokémon-related components and slices
+  - `App.js`: Main application component with routing setup
+  - `index.js`: Entry point of the application
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Home Page**: Displays a list of Pokémon. Use the "Previous" and "Next" buttons to navigate through the list.
+- **Details Page**: Click on a Pokémon name to view its details on a new route.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
 
-### Code Splitting
+Contributions are welcome! Please open an issue or submit a pull request for any changes or improvements.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
+This project is licensed under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contact
 
-### Making a Progressive Web App
+For any inquiries or feedback, please reach out via email or LinkedIn:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Email: [aliamanatali218@gmail.com](mailto:aliamanatali218@gmail.com)
+- GitHub: [aliamanatali](https://github.com/aliamanatali)
+- LinkedIn: [Ali Amanat Ali](https://www.linkedin.com/in/aliamanatali)
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to customize this README further based on your specific needs or preferences.
