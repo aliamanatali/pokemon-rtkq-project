@@ -1,18 +1,19 @@
-import "./App.css";
-import { Data } from "./components/Data";
-import { store } from "./store";
-import { Provider } from "react-redux";
-import { ApiProvider } from "@reduxjs/toolkit/query/react";
-import { productsApi } from "./features/apiSlice";
+import React from 'react';
+import { Provider } from 'react-redux';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { store } from './app/store';
+import PokemonList from './features/pokemon/pokemonList'
+import PokemonDetails from './features/pokemon/pokemonDetails';
 
 function App() {
   return (
     <Provider store={store}>
-      <ApiProvider api={productsApi}>
-        <div className="App">
-          <Data />
-        </div>
-      </ApiProvider>
+      <Router>
+          <Routes>
+            <Route path="/" element={<PokemonList />} />
+            <Route path="/pokemon/:name" element={<PokemonDetails />} />
+          </Routes>
+      </Router>
     </Provider>
   );
 }
